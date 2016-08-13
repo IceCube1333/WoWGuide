@@ -10,7 +10,7 @@
 </head>
 
 
-<body>
+<body class="bg">
 
 
 <div id="content">
@@ -91,7 +91,7 @@
 					</div>
 			</div>
 
-			<div class="col-md-6" id="photo">
+			<div class="col-md-6" id="photo2">
 				<div class="sameHt newImg">
 				<img class="sidePhoto" src="../WoW%20Guide%20Photos/WoWClassesMain.jpg">
 				</div></div>
@@ -123,8 +123,8 @@
 				
 				$('.sidePhoto').remove();
 				
-				$('#photo').removeClass('col-md-6');
-				$('#photo').addClass('col-md-offset-1 col-md-5 test');
+				$('#photo2').removeClass('col-md-6');
+				$('#photo2').addClass('col-md-offset-1 col-md-5 test');
 				$('#BTNcolor').addClass('radius');
 				$('#warrior').addClass('noBtmRt');
 				$('#druid').addClass('btmBorder');
@@ -182,9 +182,9 @@
 				
 			}).mouseleave(function(){
 				$('.addedImg').remove();
-				$('#photo').addClass('col-md-6');
+				$('#photo2').addClass('col-md-6');
 				$('#BTNcolor').removeClass('radius');
-				$('#photo').removeClass('col-md-offset-1 col-md-5');
+				$('#photo2').removeClass('col-md-offset-1 col-md-5');
 				$('#warrior').removeClass('noBtmRt');
 				$('#druid').removeClass('btmBorder');
 				$('.newImg').append('<img class="sidePhoto" src="../WoW%20Guide%20Photos/WoWClassesMain.jpg">');
