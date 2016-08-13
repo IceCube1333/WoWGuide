@@ -1,3 +1,89 @@
-#BTNcolor {background-color: saddlebrown;font-size: 15px;}
+#BTNcolor {
+/*	background-color: #6e401f;*/
+	background-color: #293148;
+	font-size: 20px;
+	border-radius: 10px 0 0 10px;
+}
 #photo{padding: 0;}
-#foot{background-color: gray;}
+#foot{background-color: #222222; color: #9D9470;}
+
+.nav-brown {
+	background-color: #804000;
+	border-color: #804000;
+	border-radius: 0;
+}
+
+.navbar-inverse {
+	border-radius: 0;
+}
+
+/*
+ul li:hover,
+ul li:focus,
+ul li > .active > a {
+	background-color: red;
+}*/
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: red;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+#content {
+	min-height: calc(100vh - 30px);
+}
+
+.pics {
+	width: 100px;
+	height: 100px;
+}
+
+.sidePhoto {
+	width: 100%;
+	height: 100%;
+	border-radius: 0 10px 10px 0;
+}
+
+.border {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.rtBorder {
+	border-right: 1px solid black;
+	border-bottom: 0;
+}
+
+.addedImg {
+	width: 50%;
+	height: 100%;
+}
+
+center {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+/*
+body {
+	background-color: #8B4513;
+}
+*/
+
+.radius {
+	border-radius: 10px !important;
+	
+}
+
+.btmBorder {
+	border-right: 0;
+	border-bottom: 1px solid black;
+}
+
+.noBtmRt {
+	border-right: 0;
+	border-bottom: 0;
+}
