@@ -1,3 +1,17 @@
 #BTNcolor {background-color: saddlebrown;font-size: 15px;}
 #photo{padding: 0;}
 #foot{background-color: gray;}
+header {text-align: center;}
+body{background-color: #293148; color:white;}
+h1{display:inline;}
+
+#detail{float: left;
+	max-width: 500px;
+	padding: 1em;
+}
+#photo{
+				
+	max-width:500px;
+				padding:1em;
+				
+}
