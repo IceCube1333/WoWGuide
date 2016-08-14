@@ -109,6 +109,7 @@ h1{display:inline;}
 				padding:1em;
 				
 }
+
 #WoWmap {background-image: url('../WoW%20Guide%20Photos/LegionWorldMap.jpg');
 background-size: cover;
 	background-repeat: no-repeat;
@@ -116,4 +117,14 @@ background-size: cover;
 	#LogoTop
 		
 	}
+
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+	float: right;
+	color: white;
+}
 

@@ -4,7 +4,6 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
-	<link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.css">
 	<link rel="stylesheet" href="../CSS/CSSMain.css">
 	<title>Death Knight</title>
 	</head>
@@ -35,12 +34,15 @@
 				<p>Death Knights engage their foes up-close, supplementing swings of their weapons with dark magic that renders enemies vulnerable or damages them with unholy power. They drag foes into one-on-one conflicts, compelling them to focus their attacks away from weaker companions. To prevent their enemies from fleeing their grasp, death knights must remain mindful of the power they call forth from runes, and pace their attacks appropriately.</p>
 				<h3><b><ins>Specializations</ins></b></h3>
 				<br>
-				<h4><b><ins>Blood</ins></b></h4>
-				<p>(Tank)</p>
-				<p>The Blood specialisation relies on dodging and parrying attacks (as they cannot block them) and on self-healing. In fact, due to this ability to routinely self-heal using Death Strike, Blood Death Knights are surprisingly self-sufficient.
-				</p>
-				<p>
+				<h4><b><ins>Blood </ins></b></h4>
+
+					<span class="more">
+				<p>(Tank)
+				<br>
+					The Blood specialisation relies on dodging and parrying attacks (as they cannot block them) and on self-healing. In fact, due to this ability to routinely self-heal using Death Strike, Blood Death Knights are surprisingly self-sufficient.
+					<br>
 				In addition to self-healing, Blood Death Knights also have a high number of defensive cooldowns to use throughout the fight, leading to the player having a very active role. This means that mastering the specialisation is particularly important in order to have a smooth damage intake.</p>
+				</span>
 				
 				
 				
@@ -57,20 +59,94 @@
 				<br>
 				<br>	
 			<h4><b><ins>Frost</ins></b></h4>
-				<p>(Melee Damage)</p>
-				<p>The Frost specialisation (which now only allows for dual-wielding One-Handed Weapons) provides reasonable single target and area of effect damage. Focusing on moves like Howling Blast to do a lot of area of effect (AOE) damage.
+			<span class="more">
+				<p>(Melee Damage)
+					<br>
+					The Frost specialisation (which now only allows for dual-wielding One-Handed Weapons) provides reasonable single target and area of effect damage. Focusing on moves like Howling Blast to do a lot of area of effect (AOE) damage.
 				</p>
+				</span>
 			
 				<h4><b><ins>Unholy</ins></b></h4>
-				<p>(Melee Damage & Pets)</p>
-				<p>The Unholy specialisation provides a much stronger single target damage and area of effect damage then Frost. It also focuses heavily on the use of a minion/pet through the use of cooldown abilities to strength a minion and to summon minions. Unlike Frost this class wields 2-handed weapons in battle.
+			<span class="more">
+				<p>(Melee Damage & Pets)
+					<br>
+					The Unholy specialisation provides a much stronger single target damage and area of effect damage then Frost. It also focuses heavily on the use of a minion/pet through the use of cooldown abilities to strength a minion and to summon minions. Unlike Frost this class wields 2-handed weapons in battle.
 				</p>
+				</span>
 			</div>
 		</div>
 		</div>
 		
 		
-	<script href="../jquery/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+<script src="https://use.fontawesome.com/3057e5610b.js"></script>
+
+		<script>
+		$(function() {
+//			$('.fa-chevron-down').unbind('click').click(function() {
+//				
+//				var specID = $(this).attr('id');
+////				alert('#'+specID);
+//				$('#'+specID+'2').removeClass('hidden');
+//				$(this).removeClass('fa-chevron-down');
+//				$('#'+specID).addClass('fa-chevron-up');
+//				
+//				$('.fa-chevron-up').click(function() {
+//				
+//				var specID = $(this).attr('id');
+////				alert('#'+specID);
+//				$('#'+specID+'2').addClass('hidden');
+//				$(this).removeClass('fa-chevron-up');
+//				$('#'+specID).addClass('fa-chevron-down');
+//				
+//			});
+//				
+//			});
+			
+			// Configure/customize these variables.
+    var showChar = 0;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = '<i class="fa fa-chevron-down" id="" aria-hidden="true"></i>';
+    var lesstext = '<i class="fa fa-chevron-up" id="" aria-hidden="true"></i>';
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+			
+			
+			
+	});
+		
+
+</script>
 	</body>
 	
 </html>
