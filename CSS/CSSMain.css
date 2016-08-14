@@ -93,7 +93,7 @@ body {
 	background-color: white;
 }
 
-#foot{background-color: gray;}
+#foot{background-color: #222222;}
 header {text-align: center;}
 body{background-color: #293148; color:white;}
 h1{display:inline;}
@@ -102,10 +102,18 @@ h1{display:inline;}
 	max-width: 500px;
 	padding: 1em;
 }
-
+#inline{display: inline;}
 #photo{
 				
 	max-width:500px;
 				padding:1em;
 				
 }
+#WoWmap {background-image: url('../WoW%20Guide%20Photos/LegionWorldMap.jpg');
+background-size: cover;
+	background-repeat: no-repeat;
+}
+	#LogoTop
+		
+	}
+
